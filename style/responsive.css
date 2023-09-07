@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #032A49;
+    --secondary-color: #C4C5DA;
+    --tertiary-color: #616E9A;
+    --additional-color: #FFFFFF;
+    --font-style: 'Montserrat', sans-serif;
+    --padding: 60px;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .service-heading {
+        font-size: 25px;
+    }
+
+    .service-subheading {
+        font-size: 14px;
+    }
+
+
+
+    .testimonial-content {
+        padding: 30px;
+    }
+    
+
+    .testimonial-content img {
+        height: 80px;
+    }
+}
+
+
+
+/*TABLET SIZE*/
+@media only screen and (max-width: 900px) {
+    header {
+        
+        padding: 5px 30px 5px 30px;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: sticky;
+    }
+
+    .hamburger .line {
+        margin-bottom: 6px;
+        width: 30px;
+        height: 3px;
+        background-color: var(--secondary-color);
+    }
+
+    .navbar {
+        align-items: flex-start;
+        height: 0;
+        position: absolute;
+        top: 110px;
+        background-color: var(--tertiary-color);
+        width: 100vw;
+        left: 0;
+        right: 0;
+        transition: 0.7s;
+        overflow: hidden;
+        z-index: 999;
+    }
+    
+    .navbar ul {
+        display: block;
+        width: fit-content;
+        margin: 20px auto 0 auto;
+        text-align: center;
+        transition: 0.2s;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .navbar ul li {
+        margin-top: 20px;
+        color: red;
+    }
+
+    .navbar ul li a:hover {
+        color: var(--primary-color);
+    }
+
+    .navbar.active {
+        height: 300px;
+    }
+
+    .navbar.active ul {
+        opacity: 1;
+    }
+
+    .welcome-section-con {
+        padding: 50px;
+        display: flex;
+       
+    }
+
+    .welcome-img-con {
+        width: 100%;
+        height: 650px;
+        opacity: 0.2;
+    }
+    
+    .welcome-content-con {
+        position: absolute;
+        width:85%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        z-index: 1;
+        row-gap: 10px;
+        right: 0;
+        left: 0;
+        top: 280px;
+        margin: auto;
+
+    }
+
+    .welcome-content-con .welcome-heading  {
+        font-size: 40px;
+    }
+
+    .welcome-content-con .parag-content {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .welcome-content-con .p-1 {
+        font-size: 25px;
+    }
+
+    .btn {
+        background-color: var(--additional-color);
+        width: 225px;
+        height: 45px;
+        font-size: 14px; 
+    }
+
+
+    .about-me-con {
+        flex-direction: column-reverse;
+        padding: 50px;
+    }
+
+    .about-us-content-con {
+        width: 100%;
+    }
+
+    .image-container {
+        width: auto;
+        height: 450px;
+        margin-bottom: 30px;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .sub-heading {
+        font-size: 22px;
+    }
+
+    .paragraph-content {
+        font-size: 14px;
+    }
+
+    .my-project {
+        padding: 50px;
+    }
+
+
+    .project-details {
+        padding-right: 0px;
+    }
+
+    .project-image{ 
+        width: 50%;
+    }
+
+    .project-2 .project-details, .project-4 .project-details {
+        padding-left: 0;
+    }
+
+    .services-con {
+        padding: 50px;
+    }
+
+    .services {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .service {
+        width: auto;
+    }
+
+    .testimonial-con {
+        padding: 50px;
+    }
+
+    .testimonial-content img{
+     height: 50px;
+     width: 65px;
+    }
+
+    .email-us-form-con {
+        padding: 50px;
+        row-gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .email-us-details-con {
+        width: 100%;
+    }
+  
+    .email-us-details-con .email-us-tagline {
+        font-size: 40px;
+    }
+  
+    .email-us-form {
+        width: 100%;
+    }
+
+
+}
+
+
+
+/*MOBILE SIZE*/
+@media only screen and (max-width:600px) {
+    .welcome-section-con {
+        padding: 25px 15px 25px 15px;
+    }
+/* 
+    .welcome-content-con {
+        position: absolute;
+        top: 200px;
+    } */
+    .welcome-content-con .welcome-heading {
+        font-size: 28px;
+    }
+
+    .btn {
+        margin-top: 0;
+    }
+
+    .about-me-con {
+        padding: 50px 15px;
+    }
+
+    .image-container {
+        height: auto;
+    }
+
+    .sub-heading {
+        text-align: center;
+    }
+
+    .my-project {
+        padding: 50px 15px;
+    }
+
+
+    .project {
+        flex-direction: column-reverse;
+    }
+
+    .project-details {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .details-container {
+        width: 100%;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .services-con {
+        padding: 50px 15px;
+    }
+
+    .service {
+        width: auto;
+        }
+
+    .testimonial-con {
+        padding: 50px 15px;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+
+    .testimonial-content {
+        width: 100%;
+    }
+
+    .testimonial-content {
+        padding: 50px;
+    }
+
+    .email-us-form-con {
+        padding: 50px 15px;
+      }
+      
+      .email-us-details-con .email-us-tagline {
+        font-size: 35px;
+      }
+      
+      .email-us-details-con .email-us-content {
+        font-size: 14px;
+      }
+      
+      #submit {
+        padding: 15px;
+      }
+
+      
+	#topBtn {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		opacity: .9;
+	}
+}
